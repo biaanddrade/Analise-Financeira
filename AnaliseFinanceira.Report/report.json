@@ -1,0 +1,111 @@
+{
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.60\",\"type\":2},\"customTheme\":{\"name\":\"Bloom\",\"version\":\"5.60\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "Bloom",
+            "path": "BuiltInThemes/Bloom.json",
+            "type": 201
+          },
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Análise Financeira",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "c4f61a4989805ef71638",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"2e9767ba56842270d771\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":256.6666666666667,\"z\":2000,\"width\":202.77777777777777,\"height\":117.22222222222221,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"MedidasIndicadoresFinanceiros.MargemLucro\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MedidasIndicadoresFinanceiros\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"MargemLucro\"},\"Name\":\"MedidasIndicadoresFinanceiros.MargemLucro\",\"NativeReferenceName\":\"MargemLucro\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"MargemLucro\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"35D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Margem de Lucro'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 117.22,
+          "width": 202.78,
+          "x": 0.00,
+          "y": 256.67,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"3e19a95ab577602c3f5a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":405,\"y\":386,\"z\":4000,\"width\":381,\"height\":334,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"areaChart\",\"projections\":{\"Y\":[{\"queryRef\":\"MedidasIndicadoresFinanceiros.TotalDespesas\"}],\"Category\":[{\"queryRef\":\"DadosFinanceiros.Componente\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MedidasIndicadoresFinanceiros\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"DadosFinanceiros\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"TotalDespesas\"},\"Name\":\"MedidasIndicadoresFinanceiros.TotalDespesas\",\"NativeReferenceName\":\"TotalDespesas\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Componente\"},\"Name\":\"DadosFinanceiros.Componente\",\"NativeReferenceName\":\"Componente\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"TotalDespesas\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"referenceLine\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"displayName\":{\"expr\":{\"Literal\":{\"Value\":\"'Linha média 1'\"}}},\"value\":{\"expr\":{\"Aggregation\":{\"Expression\":{\"SelectRef\":{\"ExpressionName\":\"MedidasIndicadoresFinanceiros.TotalDespesas\"}},\"Function\":1}}},\"dataLabelShow\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'front'\"}}},\"dataLabelHorizontalPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'right'\"}}},\"dataLabelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1000D\"}}}},\"selector\":{\"metadata\":\"MedidasIndicadoresFinanceiros.TotalDespesas\",\"id\":\"1\"}}],\"lineStyles\":[{\"properties\":{\"showMarker\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total de Despesas Por Componente'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 334.00,
+          "width": 381.00,
+          "x": 405.00,
+          "y": 386.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"93ebf43ebc5427f478ec\",\"layouts\":[{\"id\":0,\"position\":{\"x\":212.85714285714286,\"y\":0,\"z\":6000,\"width\":1067.142857142857,\"height\":374.28571428571433,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"keyDriversVisual\",\"projections\":{\"Target\":[{\"queryRef\":\"DadosFinanceiros.Valor\"}],\"ExplainBy\":[{\"queryRef\":\"DadosFinanceiros.Tipo\"},{\"queryRef\":\"DadosFinanceiros.Componente\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DadosFinanceiros\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Valor\"},\"Name\":\"DadosFinanceiros.Valor\",\"NativeReferenceName\":\"Valor\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Tipo\"},\"Name\":\"DadosFinanceiros.Tipo\",\"NativeReferenceName\":\"Tipo\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Componente\"},\"Name\":\"DadosFinanceiros.Componente\",\"NativeReferenceName\":\"Componente\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"keyDrivers\":[{\"properties\":{\"selectedAnalysis\":{\"expr\":{\"Literal\":{\"Value\":\"'topProfiles'\"}}},\"allowKeyDrivers\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"numericTargetSelectedKind\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 374.29,
+          "width": 1067.14,
+          "x": 212.86,
+          "y": 0.00,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"abf678dd7cbd3458ac72\",\"layouts\":[{\"id\":0,\"position\":{\"x\":658.5714285714287,\"y\":0,\"z\":7000,\"width\":621.4285714285714,\"height\":104.28571428571429,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"\"}],\"horizontalTextAlignment\":\"right\"},{\"textRuns\":[{\"value\":\"Microsoft Power BI Para Business Intelligence e Data Science\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"16pt\"}}],\"horizontalTextAlignment\":\"right\"},{\"textRuns\":[{\"value\":\"Dashboard de Análise Financeira\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"16pt\"}}],\"horizontalTextAlignment\":\"right\"}]}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"general\":[{\"properties\":{\"keepLayerOrder\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 104.29,
+          "width": 621.43,
+          "x": 658.57,
+          "y": 0.00,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"b0f1a6f1d789d8e47612\",\"layouts\":[{\"id\":0,\"position\":{\"x\":797,\"y\":386,\"z\":5000,\"width\":483,\"height\":334,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"DadosFinanceiros.Tipo\",\"active\":true},{\"queryRef\":\"DadosFinanceiros.Componente\",\"active\":true}],\"Columns\":[{\"queryRef\":\"DadosFinanceiros.Data.Variation.Hierarquia de datas.Ano\",\"active\":true}],\"Values\":[{\"queryRef\":\"Sum(DadosFinanceiros.Valor)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DadosFinanceiros\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Tipo\"},\"Name\":\"DadosFinanceiros.Tipo\",\"NativeReferenceName\":\"Tipo\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Componente\"},\"Name\":\"DadosFinanceiros.Componente\",\"NativeReferenceName\":\"Componente\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Name\":\"Variation\",\"Property\":\"Data\"}},\"Hierarchy\":\"Hierarquia de datas\"}},\"Level\":\"Ano\"},\"Name\":\"DadosFinanceiros.Data.Variation.Hierarquia de datas.Ano\",\"NativeReferenceName\":\"Data Ano\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Valor\"}},\"Function\":0},\"Name\":\"Sum(DadosFinanceiros.Valor)\",\"NativeReferenceName\":\"Soma de Valor\"}]},\"expansionStates\":[{\"roles\":[\"Rows\"],\"levels\":[{\"queryRefs\":[\"DadosFinanceiros.Tipo\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"DadosFinanceiros\"}},\"Property\":\"Tipo\"}}],\"isPinned\":true},{\"queryRefs\":[\"DadosFinanceiros.Componente\"],\"isCollapsed\":true,\"isPinned\":true}],\"root\":{\"identityValues\":null,\"children\":[{\"identityValues\":[{\"Literal\":{\"Value\":\"'Despesas'\"}}],\"isToggled\":true},{\"identityValues\":[{\"Literal\":{\"Value\":\"'Receitas'\"}}],\"isToggled\":true}]}}],\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 334.00,
+          "width": 483.00,
+          "x": 797.00,
+          "y": 386.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"d4ad6bd6a034d1d46019\",\"layouts\":[{\"id\":0,\"position\":{\"x\":2.857142857142857,\"y\":128.57142857142858,\"z\":1000,\"width\":202.85714285714286,\"height\":117.14285714285715,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"MedidasIndicadoresFinanceiros.TotalDespesas\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MedidasIndicadoresFinanceiros\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"TotalDespesas\"},\"Name\":\"MedidasIndicadoresFinanceiros.TotalDespesas\",\"NativeReferenceName\":\"TotalDespesas\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"TotalDespesas\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"35D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total de Despesas'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 117.14,
+          "width": 202.86,
+          "x": 2.86,
+          "y": 128.57,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"eecafe52fa1134b702f3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":385.55555555555554,\"z\":3000,\"width\":392.77777777777777,\"height\":334.44444444444446,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"DadosFinanceiros.Componente\",\"active\":true}],\"Y\":[{\"queryRef\":\"MedidasIndicadoresFinanceiros.TotalReceitas\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DadosFinanceiros\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"MedidasIndicadoresFinanceiros\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Componente\"},\"Name\":\"DadosFinanceiros.Componente\",\"NativeReferenceName\":\"Componente\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"TotalReceitas\"},\"Name\":\"MedidasIndicadoresFinanceiros.TotalReceitas\",\"NativeReferenceName\":\"TotalReceitas\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"TotalReceitas\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1000D\"}}}}}],\"categoryAxis\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total de Receitas Por Componentes'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 334.44,
+          "width": 392.78,
+          "x": 0.00,
+          "y": 385.56,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"f8aa74fa6b9a2bca6e49\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":202.77777777777777,\"height\":117.22222222222221,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"MedidasIndicadoresFinanceiros.TotalReceitas\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MedidasIndicadoresFinanceiros\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"TotalReceitas\"},\"Name\":\"MedidasIndicadoresFinanceiros.TotalReceitas\",\"NativeReferenceName\":\"TotalReceitas\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"TotalReceitas\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"35D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total de Receitas'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 117.22,
+          "width": 202.78,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ],
+  "theme": "Bloom"
+}
